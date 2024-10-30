@@ -4,24 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Joel Teodoro Gómez</title>
+  <!-- Tailwind CSS -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@6.8.4/swiper-bundle.min.css" />
+  <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body class="bg-gray-900 text-gray-300 font-sans text-xl">
+
+  <!-- Navbar -->
   <header class="bg-gray-800 bg-opacity-80 backdrop-blur-sm shadow-lg fixed top-0 w-full z-10">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <!-- Navegación centrada -->
       <div class="flex-1 flex justify-center">
         <nav class="text-xl font-semibold space-x-8">
-          <a href="#about" class="hover:text-yellow-400 scroll-link px-3 py-2 border-b-2 border-transparent transition duration-300 ease-in-out">About</a>
-          <a href="#projects" class="hover:text-yellow-400 scroll-link px-3 py-2 border-b-2 border-transparent transition duration-300 ease-in-out">Projects</a>
-          <a href="#experience" class="hover:text-yellow-400 scroll-link px-3 py-2 border-b-2 border-transparent transition duration-300 ease-in-out">Experience</a>
-          <a href="#education" class="hover:text-yellow-400 scroll-link px-3 py-2 border-b-2 border-transparent transition duration-300 ease-in-out">Education</a>
-          <a href="#comments" class="hover:text-yellow-400 scroll-link px-3 py-2 border-b-2 border-transparent transition duration-300 ease-in-out">Comments</a>
-          <a href="#contact" class="hover:text-yellow-400 scroll-link px-3 py-2 border-b-2 border-transparent transition duration-300 ease-in-out">Contact</a>
+          <a href="#about" id="nav-about" class="hover:text-yellow-400 scroll-link px-3 py-2 border-b-2 border-transparent transition duration-300 ease-in-out">About</a>
+          <a href="#featured-projects" id="nav-featured-projects" class="hover:text-yellow-400 scroll-link px-3 py-2 border-b-2 border-transparent transition duration-300 ease-in-out">Featured Projects</a>
+          <a href="#projects" id="nav-projects" class="hover:text-yellow-400 scroll-link px-3 py-2 border-b-2 border-transparent transition duration-300 ease-in-out">Projects</a>
+          <a href="#experience" id="nav-experience" class="hover:text-yellow-400 scroll-link px-3 py-2 border-b-2 border-transparent transition duration-300 ease-in-out">Experience</a>
+          <a href="#education" id="nav-education" class="hover:text-yellow-400 scroll-link px-3 py-2 border-b-2 border-transparent transition duration-300 ease-in-out">Education</a>
+          <a href="#comments" id="nav-comments" class="hover:text-yellow-400 scroll-link px-3 py-2 border-b-2 border-transparent transition duration-300 ease-in-out">Comments</a>
+          <a href="#contact" id="nav-contact" class="hover:text-yellow-400 scroll-link px-3 py-2 border-b-2 border-transparent transition duration-300 ease-in-out">Contact</a>
         </nav>
       </div>
-  
+      <!-- Selector de idioma alineado a la derecha -->
       <div class="ml-4">
         <select id="language-select" class="bg-gray-700 text-gray-300 text-lg px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400">
           <option value="en">English</option>
@@ -32,205 +39,222 @@
   </header>
 
   <div class="pt-24">
-  <div class="max-w-7xl mx-auto rounded-lg p-8 mt-10">
-    
+    <div class="max-w-7xl mx-auto rounded-lg p-8 mt-10">
 
-
-    <section class="text-center mb-12">
-      <div class="flex flex-col items-center">
-        <img src="#.jpg" alt="Profile Picture" class="w-48 h-48 rounded-full border-4 border-yellow-400 mb-4">
-        <h1 class="text-4xl font-semibold text-yellow-400">Joel Teodoro Gómez</h1>
-        <p class="text-gray-500 text-lg mt-2">Backend Developer & Golang Enthusiast</p>
-        <a href="CV-ENG-JoelTeodoro.pdf" download class="mt-4 inline-block px-6 py-2 border border-yellow-400 text-yellow-400 rounded hover:bg-yellow-400 hover:text-gray-900 transition-colors text-lg">
-          Download CV
-        </a>
-      </div>
-    </section>
-
-    <section id="about" class="text-center my-20">
-      <h2 class="text-3xl font-semibold text-yellow-400 mb-6">About</h2>
-      <p class="text-gray-400 max-w-lg mx-auto leading-relaxed">
-        I am a passionate Software Engineer skilled in backend development. With a strong foundation in Golang and experience in microservices architecture, I thrive in creating scalable, high-performance applications.
-      </p>
-    </section>
-
-    <section class="my-20">
-      <h3 class="text-3xl font-semibold text-yellow-400 text-center mb-8">My Skills</h3>
-      <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6">
-        
-  <!-- Golang -->
-  <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-md hover:bg-yellow-400 hover:text-gray-900 transition-colors">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" alt="Golang" class="w-10 h-10 mb-2">
-    <span class="text-gray-200 text-sm font-medium">Golang</span>
-  </div>
-
-  <!-- C -->
-  <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-md hover:bg-yellow-400 hover:text-gray-900 transition-colors">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="C" class="w-10 h-10 mb-2">
-    <span class="text-gray-200 text-sm font-medium">C</span>
-  </div>
-
-  <!-- Python -->
-  <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-md hover:bg-yellow-400 hover:text-gray-900 transition-colors">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" class="w-10 h-10 mb-2">
-    <span class="text-gray-200 text-sm font-medium">Python</span>
-  </div>
-
-  <!-- Java -->
-  <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-md hover:bg-yellow-400 hover:text-gray-900 transition-colors">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java" class="w-10 h-10 mb-2">
-    <span class="text-gray-200 text-sm font-medium">Java</span>
-  </div>
-
-  <!-- JavaScript -->
-  <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-md hover:bg-yellow-400 hover:text-gray-900 transition-colors">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-10 h-10 mb-2">
-    <span class="text-gray-200 text-sm font-medium">JavaScript</span>
-  </div>
-
-  <!-- Spring -->
-  <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-md hover:bg-yellow-400 hover:text-gray-900 transition-colors">
-    <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="Spring" class="w-10 h-10 mb-2">
-    <span class="text-gray-200 text-sm font-medium">Spring</span>
-  </div>
-
-  <!-- React -->
-  <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-md hover:bg-yellow-400 hover:text-gray-900 transition-colors">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="React" class="w-10 h-10 mb-2">
-    <span class="text-gray-200 text-sm font-medium">React</span>
-  </div>
-
-  <!-- Docker -->
-  <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-md hover:bg-yellow-400 hover:text-gray-900 transition-colors">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="Docker" class="w-10 h-10 mb-2">
-    <span class="text-gray-200 text-sm font-medium">Docker</span>
-  </div>
-
-  <!-- Redis -->
-  <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-md hover:bg-yellow-400 hover:text-gray-900 transition-colors">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg" alt="Redis" class="w-10 h-10 mb-2">
-    <span class="text-gray-200 text-sm font-medium">Redis</span>
-  </div>
-
-  <!-- Kafka -->
-  <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-md hover:bg-yellow-400 hover:text-gray-900 transition-colors">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/apachekafka/apachekafka-original-wordmark.svg" alt="Kafka" class="w-10 h-10 mb-2">
-    <span class="text-gray-200 text-sm font-medium">Kafka</span>
-  </div>
-
-  <!-- RabbitMQ -->
-  <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-md hover:bg-yellow-400 hover:text-gray-900 transition-colors">
-    <img src="https://www.vectorlogo.zone/logos/rabbitmq/rabbitmq-icon.svg" alt="RabbitMQ" class="w-10 h-10 mb-2">
-    <span class="text-gray-200 text-sm font-medium">RabbitMQ</span>
-  </div>
-
-  <!-- PostgreSQL -->
-  <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-md hover:bg-yellow-400 hover:text-gray-900 transition-colors">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="PostgreSQL" class="w-10 h-10 mb-2">
-    <span class="text-gray-200 text-sm font-medium">PostgreSQL</span>
-  </div>
-
-  <!-- SQLite -->
-  <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-md hover:bg-yellow-400 hover:text-gray-900 transition-colors">
-    <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="SQLite" class="w-10 h-10 mb-2">
-    <span class="text-gray-200 text-sm font-medium">SQLite</span>
-  </div>
-
-  <!-- MongoDB -->
-  <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-md hover:bg-yellow-400 hover:text-gray-900 transition-colors">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="MongoDB" class="w-10 h-10 mb-2">
-    <span class="text-gray-200 text-sm font-medium">MongoDB</span>
-  </div>
-
-  <!-- Linux -->
-  <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-md hover:bg-yellow-400 hover:text-gray-900 transition-colors">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="Linux" class="w-10 h-10 mb-2">
-    <span class="text-gray-200 text-sm font-medium">Linux</span>
-  </div>
-
-  <!-- Bash -->
-  <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-md hover:bg-yellow-400 hover:text-gray-900 transition-colors">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg" alt="Bash" class="w-10 h-10 mb-2">
-    <span class="text-gray-200 text-sm font-medium">Bash</span>
-  </div>
-
-      </div>
-    </section>
-
-    <section id="education" class="my-20">
-      <h3 class="text-4xl font-semibold text-yellow-400 text-center mb-8">Education</h3>
-      <div class="text-center text-gray-400">
-        <p class="mb-4 font-semibold text-2xl">Software Engineering Degree</p>
-        <p class="mb-4 text-xl">Universitat Rovira i Virgili</p>
-        <p class="text-gray-500 text-lg">Sept. 2020 - June 2024 • Tarragona, Spain</p>
-      </div>
-    </section>
-
-
-    <!-- Projects Section with Swiper Slider -->
-    <section id="projects" class="repos-section my-20">
-      <h2 class="text-3xl font-semibold text-yellow-400 text-center mb-8">My GitHub Repositories</h2>
-      <div class="swiper-container">
-        <div class="swiper-wrapper" id="repos">
-          <!-- Repositories will load here as swiper slides -->
+      <!-- Sección Principal -->
+      <section class="text-center mb-12">
+        <div class="flex flex-col items-center">
+          <img src="joelFoto.jpg" alt="Profile Picture" class="w-48 h-48 rounded-full border-4 border-yellow-400 mb-4">
+          <h1 id="main-title" class="text-4xl font-semibold text-yellow-400">Joel Teodoro Gómez</h1>
+          <p id="main-subtitle" class="text-gray-500 text-lg mt-2">Backend Developer & Golang Enthusiast</p>
+          <a href="CV-ENG-JoelTeodoro.pdf" id="download-cv" download class="mt-4 inline-block px-6 py-2 border border-yellow-400 text-yellow-400 rounded hover:bg-yellow-400 hover:text-gray-900 transition-colors text-lg">
+            Download CV
+          </a>
         </div>
-        <!-- Swiper navigation -->
-        <div class="swiper-button-next text-yellow-400"></div>
-        <div class="swiper-button-prev text-yellow-400"></div>
-      </div>
-    </section>
+      </section>
 
-    <section id="experience" class="my-20">
-      <h3 class="text-3xl font-semibold text-yellow-400 text-center mb-8">Experience</h3>
-      <div class="space-y-6 mt-6 text-center text-gray-400 text-lg">
-        <!-- Experience entries go here -->
-      </div>
-    </section>
+      <!-- Sección About -->
+      <section id="about" class="text-center my-20">
+        <h2 id="about-title" class="text-3xl font-semibold text-yellow-400 mb-6">About</h2>
+        <p id="about-content" class="text-gray-400 max-w-lg mx-auto leading-relaxed">
+          I am a passionate Software Engineer skilled in backend development. With a strong foundation in Golang and experience in microservices architecture, I thrive in creating scalable, high-performance applications.
+        </p>
+      </section>
 
-    <!-- Comments Section -->
-    <section id="comments" class="my-20">
-      <h3 class="text-3xl font-semibold text-yellow-400 text-center mb-8">Comments</h3>
-      <div class="max-w-2xl mx-auto mt-6 p-6 bg-gray-800 rounded-lg shadow-md">
-        <form id="comment-form">
-          <textarea class="w-full h-24 p-2 bg-gray-900 text-gray-300 rounded-md mb-4 text-lg" placeholder="Leave a comment..."></textarea>
-          <button type="submit" class="w-full px-4 py-2 bg-yellow-400 text-gray-900 rounded hover:bg-yellow-500 text-xl">Submit</button>
-        </form>
-      </div>
-    </section>
+      <!-- Sección Skills -->
+      <section class="my-20">
+        <h3 id="skills-title" class="text-3xl font-semibold text-yellow-400 text-center mb-8">My Skills</h3>
+        <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6">
+          
+          <!-- Golang -->
+          <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-md hover:bg-yellow-400 hover:text-gray-900 transition-colors">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" alt="Golang" class="w-10 h-10 mb-2">
+            <span class="text-gray-200 text-sm font-medium">Golang</span>
+          </div>
 
-    <section id="contact" class="my-20">
-      <h3 class="text-3xl font-semibold text-yellow-400 text-center mb-8">Contact Me</h3>
-      <p class="text-gray-400 mt-4 text-center text-lg">Feel free to reach out if you'd like to collaborate or just say hello!</p>
-      <div class="flex justify-center space-x-8 mt-8">
-        <!-- Email Icon -->
-        <a href="mailto:joel.teodoro.software@gmail.com" class="group text-gray-400 hover:text-yellow-400 transition duration-300">
-          <div class="p-4 bg-gray-800 rounded-full group-hover:bg-yellow-400 transition duration-300">
-            <img src="https://img.icons8.com/fluency/60/000000/gmail-new.png" alt="Email" class="w-12 h-12 group-hover:scale-110 transform transition duration-300">
+          <!-- C -->
+          <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-md hover:bg-yellow-400 hover:text-gray-900 transition-colors">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="C" class="w-10 h-10 mb-2">
+            <span class="text-gray-200 text-sm font-medium">C</span>
           </div>
-        </a>
-        <!-- LinkedIn Icon -->
-        <a href="https://www.linkedin.com/in/joel-teodoro-gomez/" class="group text-gray-400 hover:text-yellow-400 transition duration-300">
-          <div class="p-4 bg-gray-800 rounded-full group-hover:bg-yellow-400 transition duration-300">
-            <img src="https://img.icons8.com/color/60/000000/linkedin.png" alt="LinkedIn" class="w-12 h-12 group-hover:scale-110 transform transition duration-300">
+
+          <!-- Python -->
+          <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-md hover:bg-yellow-400 hover:text-gray-900 transition-colors">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" class="w-10 h-10 mb-2">
+            <span class="text-gray-200 text-sm font-medium">Python</span>
           </div>
-        </a>
-        <!-- GitHub Icon -->
-        <a href="https://github.com/JoelTeoGom" class="group text-gray-400 hover:text-yellow-400 transition duration-300">
-          <div class="p-4 bg-gray-800 rounded-full group-hover:bg-yellow-400 transition duration-300">
-            <img src="https://img.icons8.com/ios-glyphs/60/000000/github.png" alt="GitHub" class="w-12 h-12 group-hover:scale-110 transform transition duration-300">
+
+          <!-- Java -->
+          <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-md hover:bg-yellow-400 hover:text-gray-900 transition-colors">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java" class="w-10 h-10 mb-2">
+            <span class="text-gray-200 text-sm font-medium">Java</span>
           </div>
-        </a>
-      </div>
-    </section>
-    
+
+          <!-- JavaScript -->
+          <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-md hover:bg-yellow-400 hover:text-gray-900 transition-colors">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-10 h-10 mb-2">
+            <span class="text-gray-200 text-sm font-medium">JavaScript</span>
+          </div>
+
+          <!-- Spring -->
+          <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-md hover:bg-yellow-400 hover:text-gray-900 transition-colors">
+            <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="Spring" class="w-10 h-10 mb-2">
+            <span class="text-gray-200 text-sm font-medium">Spring</span>
+          </div>
+
+          <!-- React -->
+          <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-md hover:bg-yellow-400 hover:text-gray-900 transition-colors">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="React" class="w-10 h-10 mb-2">
+            <span class="text-gray-200 text-sm font-medium">React</span>
+          </div>
+
+          <!-- Docker -->
+          <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-md hover:bg-yellow-400 hover:text-gray-900 transition-colors">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="Docker" class="w-10 h-10 mb-2">
+            <span class="text-gray-200 text-sm font-medium">Docker</span>
+          </div>
+
+          <!-- Redis -->
+          <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-md hover:bg-yellow-400 hover:text-gray-900 transition-colors">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg" alt="Redis" class="w-10 h-10 mb-2">
+            <span class="text-gray-200 text-sm font-medium">Redis</span>
+          </div>
+
+          <!-- Kafka -->
+          <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-md hover:bg-yellow-400 hover:text-gray-900 transition-colors">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/apachekafka/apachekafka-original-wordmark.svg" alt="Kafka" class="w-10 h-10 mb-2">
+            <span class="text-gray-200 text-sm font-medium">Kafka</span>
+          </div>
+
+          <!-- RabbitMQ -->
+          <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-md hover:bg-yellow-400 hover:text-gray-900 transition-colors">
+            <img src="https://www.vectorlogo.zone/logos/rabbitmq/rabbitmq-icon.svg" alt="RabbitMQ" class="w-10 h-10 mb-2">
+            <span class="text-gray-200 text-sm font-medium">RabbitMQ</span>
+          </div>
+
+          <!-- PostgreSQL -->
+          <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-md hover:bg-yellow-400 hover:text-gray-900 transition-colors">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="PostgreSQL" class="w-10 h-10 mb-2">
+            <span class="text-gray-200 text-sm font-medium">PostgreSQL</span>
+          </div>
+
+          <!-- SQLite -->
+          <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-md hover:bg-yellow-400 hover:text-gray-900 transition-colors">
+            <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="SQLite" class="w-10 h-10 mb-2">
+            <span class="text-gray-200 text-sm font-medium">SQLite</span>
+          </div>
+
+          <!-- MongoDB -->
+          <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-md hover:bg-yellow-400 hover:text-gray-900 transition-colors">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="MongoDB" class="w-10 h-10 mb-2">
+            <span class="text-gray-200 text-sm font-medium">MongoDB</span>
+          </div>
+
+          <!-- Linux -->
+          <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-md hover:bg-yellow-400 hover:text-gray-900 transition-colors">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="Linux" class="w-10 h-10 mb-2">
+            <span class="text-gray-200 text-sm font-medium">Linux</span>
+          </div>
+
+          <!-- Bash -->
+          <div class="flex flex-col items-center p-3 bg-gray-700 rounded-lg shadow-md hover:bg-yellow-400 hover:text-gray-900 transition-colors">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg" alt="Bash" class="w-10 h-10 mb-2">
+            <span class="text-gray-200 text-sm font-medium">Bash</span>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Sección de Proyectos Destacados -->
+      <section id="featured-projects" class="my-20">
+        <h2 id="featured-projects-title" class="text-3xl font-semibold text-yellow-400 text-center mb-8">Featured Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="featured-repos">
+          <!-- Los repositorios destacados se cargarán aquí -->
+        </div>
+      </section>
+
+      <!-- Sección de Proyectos con Swiper Slider -->
+      <section id="projects" class="repos-section my-20">
+        <h2 id="projects-title" class="text-3xl font-semibold text-yellow-400 text-center mb-8">My GitHub Repositories</h2>
+        <div class="swiper-container">
+          <div class="swiper-wrapper" id="repos">
+            <!-- Los repositorios se cargarán aquí como slides de Swiper -->
+          </div>
+          <!-- Navegación de Swiper -->
+          <div class="swiper-button-next text-yellow-400"></div>
+          <div class="swiper-button-prev text-yellow-400"></div>
+        </div>
+      </section>
+
+      <!-- Sección Experience -->
+      <section id="experience" class="my-20">
+        <h3 id="experience-title" class="text-3xl font-semibold text-yellow-400 text-center mb-8">Experience</h3>
+        <div class="space-y-6 mt-6 text-center text-gray-400 text-lg">
+          <!-- Añade aquí tus experiencias -->
+        </div>
+      </section>
+
+      <!-- Sección Comments -->
+      <section id="comments" class="my-20">
+        <h3 id="comments-title" class="text-3xl font-semibold text-yellow-400 text-center mb-8">Comments</h3>
+        <div class="max-w-2xl mx-auto mt-6 p-6 bg-gray-800 rounded-lg shadow-md">
+          <form id="comment-form">
+            <textarea id="comments-placeholder" class="w-full h-24 p-2 bg-gray-900 text-gray-300 rounded-md mb-4 text-lg" placeholder="Leave a comment..."></textarea>
+            <button type="submit" id="comments-submit" class="w-full px-4 py-2 bg-yellow-400 text-gray-900 rounded hover:bg-yellow-500 text-xl">Submit</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Sección Education -->
+      <section id="education" class="my-20">
+        <h3 id="education-title" class="text-4xl font-semibold text-yellow-400 text-center mb-8">Education</h3>
+        <div class="text-center text-gray-400">
+          <p id="education-degree" class="mb-4 font-semibold text-2xl">Software Engineering Degree</p>
+          <p id="education-university" class="mb-4 text-xl">Universitat Rovira i Virgili</p>
+          <p id="education-period" class="text-gray-500 text-lg">Sept. 2020 - June 2024 • Tarragona, Spain</p>
+        </div>
+      </section>
+
+      <!-- Sección Contact Me -->
+      <section id="contact" class="my-20">
+        <h3 id="contact-title" class="text-3xl font-semibold text-yellow-400 text-center mb-8">Contact Me</h3>
+        <p id="contact-content" class="text-gray-400 mt-4 text-center text-lg">Feel free to reach out if you'd like to collaborate or just say hello!</p>
+        <div class="flex justify-center space-x-8 mt-8">
+          <!-- Email Icon -->
+          <a href="mailto:joel.teodoro.software@gmail.com" class="group text-gray-400 hover:text-yellow-400 transition duration-300">
+            <div class="p-4 bg-gray-800 rounded-full group-hover:bg-yellow-400 transition duration-300">
+              <img src="https://img.icons8.com/fluency/60/000000/gmail-new.png" alt="Email" class="w-12 h-12 group-hover:scale-110 transform transition duration-300">
+            </div>
+          </a>
+          <!-- LinkedIn Icon -->
+          <a href="https://www.linkedin.com/in/joel-teodoro-gomez/" class="group text-gray-400 hover:text-yellow-400 transition duration-300">
+            <div class="p-4 bg-gray-800 rounded-full group-hover:bg-yellow-400 transition duration-300">
+              <img src="https://img.icons8.com/color/60/000000/linkedin.png" alt="LinkedIn" class="w-12 h-12 group-hover:scale-110 transform transition duration-300">
+            </div>
+          </a>
+          <!-- GitHub Icon -->
+          <a href="https://github.com/JoelTeoGom" class="group text-gray-400 hover:text-yellow-400 transition duration-300">
+            <div class="p-4 bg-gray-800 rounded-full group-hover:bg-yellow-400 transition duration-300">
+              <img src="https://img.icons8.com/ios-glyphs/60/000000/github.png" alt="GitHub" class="w-12 h-12 group-hover:scale-110 transform transition duration-300">
+            </div>
+          </a>
+        </div>
+      </section>
+
+    </div>
   </div>
-</div>
+
+  <!-- Footer -->
   <footer class="text-center text-gray-500 text-lg py-6 border-t border-gray-700 mt-20">
-    © 2023 Joel Teodoro Gómez. All rights reserved.
+    <span id="footer-text">© 2023 Joel Teodoro Gómez. All rights reserved.</span>
   </footer>
 
+  <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@6.8.4/swiper-bundle.min.js"></script>
+
+  <!-- JavaScript -->
   <script>
+    // Smooth scrolling para los enlaces de navegación
     document.querySelectorAll('.scroll-link').forEach(link => {
       link.addEventListener('click', function(e) {
         e.preventDefault();
@@ -245,6 +269,69 @@
 
     const username = "JoelTeoGom";
 
+    // Lista de nombres de repositorios destacados
+    const featuredRepoNames = [
+      'htmx-golang-ecommerce',
+      'easycab',
+      'calculator-interpreter',
+      'FullStack-app'
+    ];
+
+    // Función para obtener y mostrar los repositorios destacados
+    function fetchFeaturedRepos() {
+      const featuredReposContainer = document.getElementById("featured-repos");
+
+      featuredRepoNames.forEach(repoName => {
+        fetch(`https://api.github.com/repos/${username}/${repoName}`)
+          .then(response => response.json())
+          .then(repo => {
+            const repoCard = document.createElement("div");
+            repoCard.classList.add("bg-gray-800", "rounded-lg", "shadow-md", "overflow-hidden");
+
+            const repoImageUrl = `https://opengraph.githubassets.com/1/${username}/${repo.name}`;
+
+            const repoImage = document.createElement("img");
+            repoImage.src = repoImageUrl;
+            repoImage.alt = repo.name;
+            repoImage.classList.add("w-full", "h-32", "object-cover", "cursor-pointer");
+            repoImage.onclick = () => {
+              window.open(repo.html_url, "_blank");
+            };
+
+            const repoContent = document.createElement("div");
+            repoContent.classList.add("p-4");
+
+            const repoNameElem = document.createElement("h3");
+            repoNameElem.textContent = repo.name;
+            repoNameElem.classList.add("text-lg", "font-semibold", "text-yellow-400");
+
+            const repoDesc = document.createElement("p");
+            repoDesc.textContent = repo.description || "No description";
+            repoDesc.classList.add("text-lg", "text-gray-400", "mt-2", "h-16", "overflow-hidden");
+
+            const repoLink = document.createElement("a");
+            repoLink.href = repo.html_url;
+            repoLink.target = "_blank";
+            repoLink.textContent = "View Repository";
+            repoLink.classList.add("text-yellow-400", "hover:underline", "mt-4", "inline-block");
+
+            repoContent.appendChild(repoNameElem);
+            repoContent.appendChild(repoDesc);
+            repoContent.appendChild(repoLink);
+
+            repoCard.appendChild(repoImage);
+            repoCard.appendChild(repoContent);
+
+            featuredReposContainer.appendChild(repoCard);
+          })
+          .catch(error => console.error(`Error al obtener el repositorio ${repoName}:`, error));
+      });
+    }
+
+    // Llamar a la función para obtener y mostrar los repositorios destacados
+    fetchFeaturedRepos();
+
+    // Obtener y mostrar todos los repositorios en el slider de Swiper
     fetch(`https://api.github.com/users/${username}/repos`)
       .then((response) => response.json())
       .then((data) => {
@@ -269,9 +356,9 @@
           const repoContent = document.createElement("div");
           repoContent.classList.add("p-4");
 
-          const repoName = document.createElement("h3");
-          repoName.textContent = repo.name;
-          repoName.classList.add("text-lg", "font-semibold", "text-yellow-400");
+          const repoNameElem = document.createElement("h3");
+          repoNameElem.textContent = repo.name;
+          repoNameElem.classList.add("text-lg", "font-semibold", "text-yellow-400");
 
           const repoDesc = document.createElement("p");
           repoDesc.textContent = repo.description || "No description";
@@ -283,7 +370,7 @@
           repoLink.textContent = "View Repository";
           repoLink.classList.add("text-yellow-400", "hover:underline", "mt-4", "inline-block");
 
-          repoContent.appendChild(repoName);
+          repoContent.appendChild(repoNameElem);
           repoContent.appendChild(repoDesc);
           repoContent.appendChild(repoLink);
 
@@ -307,7 +394,177 @@
           }
         });
       })
-      .catch((error) => console.error("Error fetching repositories:", error));
+      .catch((error) => console.error("Error al obtener los repositorios:", error));
+
+    // Objeto con las traducciones
+    const translations = {
+      en: {
+        navbar: {
+          about: "About",
+          featuredProjects: "Featured Projects",
+          projects: "Projects",
+          experience: "Experience",
+          education: "Education",
+          comments: "Comments",
+          contact: "Contact"
+        },
+        mainSection: {
+          title: "Joel Teodoro Gómez",
+          subtitle: "Backend Developer & Golang Enthusiast",
+          downloadCV: "Download CV",
+          cvLink: "CV-ENG-JoelTeodoro.pdf"
+        },
+        about: {
+          title: "About",
+          content: "I am a passionate Software Engineer skilled in backend development. With a strong foundation in Golang and experience in microservices architecture, I thrive in creating scalable, high-performance applications."
+        },
+        skills: {
+          title: "My Skills"
+        },
+        featuredProjects: {
+          title: "Featured Projects"
+        },
+        projects: {
+          title: "My GitHub Repositories"
+        },
+        experience: {
+          title: "Experience"
+        },
+        comments: {
+          title: "Comments",
+          placeholder: "Leave a comment...",
+          submit: "Submit"
+        },
+        education: {
+          title: "Education",
+          degree: "Software Engineering Degree",
+          university: "Universitat Rovira i Virgili",
+          period: "Sept. 2020 - June 2024 • Tarragona, Spain"
+        },
+        contact: {
+          title: "Contact Me",
+          content: "Feel free to reach out if you'd like to collaborate or just say hello!"
+        },
+        footer: {
+          text: "© 2023 Joel Teodoro Gómez. All rights reserved."
+        }
+      },
+      es: {
+        navbar: {
+          about: "Sobre mí",
+          featuredProjects: "Proyectos Destacados",
+          projects: "Proyectos",
+          experience: "Experiencia",
+          education: "Educación",
+          comments: "Comentarios",
+          contact: "Contacto"
+        },
+        mainSection: {
+          title: "Joel Teodoro Gómez",
+          subtitle: "Desarrollador Backend & Entusiasta de Golang",
+          downloadCV: "Descargar CV",
+          cvLink: "CV-ES-JoelTeodoro.pdf"
+        },
+        about: {
+          title: "Sobre mí",
+          content: "Soy un apasionado Ingeniero de Software especializado en desarrollo backend. Con una sólida base en Golang y experiencia en arquitectura de microservicios, me encanta crear aplicaciones escalables y de alto rendimiento."
+        },
+        skills: {
+          title: "Mis Habilidades"
+        },
+        featuredProjects: {
+          title: "Proyectos Destacados"
+        },
+        projects: {
+          title: "Mis Repositorios de GitHub"
+        },
+        experience: {
+          title: "Experiencia"
+        },
+        comments: {
+          title: "Comentarios",
+          placeholder: "Deja un comentario...",
+          submit: "Enviar"
+        },
+        education: {
+          title: "Educación",
+          degree: "Grado en Ingeniería Informática",
+          university: "Universitat Rovira i Virgili",
+          period: "Sept. 2020 - Junio 2024 • Tarragona, España"
+        },
+        contact: {
+          title: "Contáctame",
+          content: "¡No dudes en ponerte en contacto si quieres colaborar o simplemente saludar!"
+        },
+        footer: {
+          text: "© 2023 Joel Teodoro Gómez. Todos los derechos reservados."
+        }
+      }
+    };
+
+    // Código para cambiar el idioma
+    const languageSelect = document.getElementById('language-select');
+
+    function changeLanguage(lang) {
+      // Navbar
+      document.getElementById('nav-about').textContent = translations[lang].navbar.about;
+      document.getElementById('nav-featured-projects').textContent = translations[lang].navbar.featuredProjects;
+      document.getElementById('nav-projects').textContent = translations[lang].navbar.projects;
+      document.getElementById('nav-experience').textContent = translations[lang].navbar.experience;
+      document.getElementById('nav-education').textContent = translations[lang].navbar.education;
+      document.getElementById('nav-comments').textContent = translations[lang].navbar.comments;
+      document.getElementById('nav-contact').textContent = translations[lang].navbar.contact;
+
+      // Main Section
+      document.getElementById('main-title').textContent = translations[lang].mainSection.title;
+      document.getElementById('main-subtitle').textContent = translations[lang].mainSection.subtitle;
+      document.getElementById('download-cv').textContent = translations[lang].mainSection.downloadCV;
+      document.getElementById('download-cv').href = translations[lang].mainSection.cvLink;
+
+      // About Section
+      document.getElementById('about-title').textContent = translations[lang].about.title;
+      document.getElementById('about-content').textContent = translations[lang].about.content;
+
+      // Skills Section
+      document.getElementById('skills-title').textContent = translations[lang].skills.title;
+
+      // Featured Projects Section
+      document.getElementById('featured-projects-title').textContent = translations[lang].featuredProjects.title;
+
+      // Projects Section
+      document.getElementById('projects-title').textContent = translations[lang].projects.title;
+
+      // Experience Section
+      document.getElementById('experience-title').textContent = translations[lang].experience.title;
+
+      // Comments Section
+      document.getElementById('comments-title').textContent = translations[lang].comments.title;
+      document.getElementById('comments-placeholder').placeholder = translations[lang].comments.placeholder;
+      document.getElementById('comments-submit').textContent = translations[lang].comments.submit;
+
+      // Education Section
+      document.getElementById('education-title').textContent = translations[lang].education.title;
+      document.getElementById('education-degree').textContent = translations[lang].education.degree;
+      document.getElementById('education-university').textContent = translations[lang].education.university;
+      document.getElementById('education-period').textContent = translations[lang].education.period;
+
+      // Contact Section
+      document.getElementById('contact-title').textContent = translations[lang].contact.title;
+      document.getElementById('contact-content').textContent = translations[lang].contact.content;
+
+      // Footer
+      document.getElementById('footer-text').textContent = translations[lang].footer.text;
+    }
+
+    // Event listener para el cambio de idioma
+    languageSelect.addEventListener('change', (e) => {
+      const selectedLang = e.target.value;
+      changeLanguage(selectedLang);
+    });
+
+    // Establecer el idioma inicial
+    changeLanguage('en');
+
   </script>
 
 </body>
