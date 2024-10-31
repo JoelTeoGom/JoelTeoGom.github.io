@@ -31,6 +31,12 @@ With the help of AI, I implemented a language toggle, letting users view the sit
 ## Why This Was Worth the Experiment 💡
 It’s one thing to see AI generate text or ideas, but seeing it actively assist in structuring a professional portfolio felt like a real leap in practical AI application. The preview model was able to integrate tailored UI suggestions and provided valuable feedback on improving code efficiency.
 
+## Conclusion
+
+Through this experience, I've noticed that while AI can generate some fairly decent code, it often encounters issues that need troubleshooting. In fact, using AI to speed up the process can sometimes backfire; you may find yourself fixing errors or restructuring code, ultimately spending more time than if you’d written it yourself. Plus, there's the risk of missing out on learning certain concepts firsthand, only to end up learning them anyway while debugging.
+
+For simple tasks, AI proves to be a very useful tool. But when it comes to tackling more complex problems, it's clear that AI isn’t a complete replacement. Where it truly shines is as a **source of information**—presenting concepts like study notes, which can be more helpful than generating the code itself.
+
 ## Try it for Yourself!
 Curious to see the results? [Visit my portfolio](https://joelteogom.github.io/) and take a look at what the future of AI-driven personal projects might look like!
 
