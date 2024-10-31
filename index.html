@@ -318,7 +318,17 @@
           .then(response => response.json())
           .then(repo => {
             const repoCard = document.createElement("div");
-            repoCard.classList.add("bg-gray-800", "rounded-lg", "shadow-md", "overflow-hidden");
+            repoCard.classList.add(
+          "bg-gray-800", 
+          "rounded-lg", 
+          "shadow-md", 
+          "overflow-hidden", 
+          "transform", 
+          "transition-transform", 
+          "duration-300", 
+          "hover:scale-105", 
+          "hover:bg-gray-700"
+        );
 
             const repoImageUrl = `https://opengraph.githubassets.com/1/${username}/${repo.name}`;
 
@@ -373,7 +383,11 @@
 
         data.forEach((repo) => {
           const repoCard = document.createElement("div");
-          repoCard.classList.add("swiper-slide", "w-64", "bg-gray-800", "rounded-lg", "shadow-md", "overflow-hidden");
+          repoCard.classList.add("swiper-slide", "w-64", "bg-gray-800", "rounded-lg", "shadow-md", "overflow-hidden",           "transform", 
+          "transition-transform", 
+          "duration-300", 
+          "hover:scale-105", 
+          "hover:bg-gray-700");
 
           const repoImageUrl = `https://opengraph.githubassets.com/1/${username}/${repo.name}`;
 
